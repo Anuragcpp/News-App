@@ -1,28 +1,35 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Navbar from './Navbar';
+import NewsItem from './NewsItem';
 
 export class News extends Component {
+  article = [
+    {
+        "title": "PayPal enables transfer of digital currencies to external wallets",
+        "imageURL": `process.env.PUBLIC_URL+"images/image1.jpg"`,
+        "discription": "The move comes after nearly two years since PayPal enabled users to buy and sell crypto on its platform.After rolling out the ability to buy and sell crypto on its platform in October 2020, PayPal is finally allowing users the ability to natively transfer, send and receive digital assets between PayPal and other wallets and exchanges. As of Tuesday, the feature is available to select U.S. users, with the feature expanding to all eligible U.S. users in the coming weeks. The first batch of supported coins consists of Bitcoin"
+    },
+]
+  constructor(){
+    super();
+    this.state= {
+      article : this.article
+    }
+  }
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-dark navbar bg-dark" data-bs-theme="dark">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="/">NEWS DAILY</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>     
-                </ul>
-                <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                </div>
-            </div>
-            </nav>
+        <Navbar />
+        <div className="container ">
+          
+          <div className="row">
+               {this.state.article.map((element)=>{
+                   return <div className="col-md-4" key={element.imageURL} >
+                       <NewsItem image ={process.env.PUBLIC_URL+"images/image1.jpg"} title={element.title} discription={element.discription.slice(0,150)} /> 
+                   </div>
+                 })}
+            </div>  
+        </div>
       </div>
     )
   }
