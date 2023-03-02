@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FirstNews from './FirstNews';
 
 export class NewsItem extends Component {
   render() {
@@ -7,11 +8,11 @@ export class NewsItem extends Component {
       <div>
         <div className="">
             <div className="card my-4">
-                <img src={image} className="card-img-top" alt="..." />
+                <img src={image} style={{height:'170px'}} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{title} </h5>
                     <p className="card-text">{discription} </p>
-                    <a href="/" className="btn btn-dark"> Read More</a>
+                    <a href= {<FirstNews /> } target={'_blank'} className="btn btn-dark"> Read More</a>
                 </div>
             </div>
         </div>
