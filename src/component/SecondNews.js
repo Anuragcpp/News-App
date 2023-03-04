@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export class SecondNews extends Component {
   render() {
-    // let {image,title,discription}= this.props;
+    
     return (
       <div className='container my-4 ' style={{fontFamily:"monospace"}} >
             <h2 className='my-3' >Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</h2>

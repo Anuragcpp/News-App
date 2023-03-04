@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export class ThiredNews extends Component {
   render() {
-    // let{image,title,discription}=this.props;
+    
     return ( 
       <div className='container my-4 'style={{fontFamily:"monospace"}} >
          <h2 className='my-3' > Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC</h2>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom';
+
 
 export class FirstNews extends Component {
   render() {
-    // let {image,title,discription}=this.props;
+    
     return (
       <div className='container my-4 ' style={{fontFamily:"monospace"}}>
          <h2 className='my-3' >PayPal enables transfer of digital currencies to external wallets</h2>

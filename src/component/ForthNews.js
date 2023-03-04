@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export class ForthNews extends Component {
   render() {
-    // let{image,discription,title}=this.props;
+    
     return (  
       <div className='container my-4 'style={{fontFamily:"monospace"}} >
          <h2 className='my-3' >Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022</h2>

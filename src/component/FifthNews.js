@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 export class FifthNews extends Component {
   render() {
-    // let{image,discription,title}=this.props;
+    
     return (
       <div className='container my-4 ' style={{fontFamily:"monospace"}}>
          <h2 className='my-3' >Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</h2>
