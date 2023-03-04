@@ -4,7 +4,7 @@ export class ForthNews extends Component {
   render() {
     // let{image,discription,title}=this.props;
     return (  
-      <div className='container my-4 ' >
+      <div className='container my-4 'style={{fontFamily:"monospace"}} >
          <h2 className='my-3' >Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022</h2>
          <p className='my-3'>2022 has been a rough and tough year for investors, traders, cryptocurrency businesses, and miners in general. The prolonged bear market, exacerbated by a series of catastrophic events, posed a threat to miners.</p>
          <div className="text-center my-3">

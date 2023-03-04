@@ -5,7 +5,7 @@ export class FifthNews extends Component {
   render() {
     // let{image,discription,title}=this.props;
     return (
-      <div className='container my-4 ' >
+      <div className='container my-4 ' style={{fontFamily:"monospace"}}>
          <h2 className='my-3' >Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</h2>
          <p className='my-3'>The investor drained $110 million in cryptocurrencies from the platform.</p>
          <div className="text-center my-3">

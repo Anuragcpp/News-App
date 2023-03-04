@@ -5,7 +5,7 @@ export class FirstNews extends Component {
   render() {
     // let {image,title,discription}=this.props;
     return (
-      <div className='container my-4 ' >
+      <div className='container my-4 ' style={{fontFamily:"monospace"}}>
          <h2 className='my-3' >PayPal enables transfer of digital currencies to external wallets</h2>
          <p className='my-3'>The move comes after nearly two years since PayPal enabled users to buy and sell crypto on its platform.</p>
          <div className="text-center my-3">

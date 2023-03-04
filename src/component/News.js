@@ -53,14 +53,8 @@ export class News extends Component {
     return (
       
         <div>
-          <div className="container ">
-            {/* <div className="row"> 
-                {this.state.article.map((element)=>{
-                    return <div className="col-md-4" key={element.imageURL} id={element.Id} >
-                        <NewsItem image ={element.imageURL} title={element.title.slice(0,80)} discription={element.discription.slice(0,150)} id={element.imageURL} /> 
-                    </div>
-                  })}
-              </div>   */}
+          <div className="container "style={{fontFamily:"initial"}}>
+            <h2 className='text-center my-2' >Daily News Top Headlines</h2>
               <div className="row">
                   <div className="col-md-4">
                       <NewsItem image={process.env.PUBLIC_URL+"images/image1.jpg"} title= "PayPal enables transfer of digital currencies to external wallets" discription={"The move comes after nearly two years since PayPal enabled users to buy and sell crypto on its platform.After rolling out the ability to buy and sell crypto on its platform in October 2020"} path={"/FirstNews"} /> 
