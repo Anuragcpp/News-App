@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import FirstNews from './FirstNews';
+import {
+ Link
+  } from "react-router-dom";
 
 export class NewsItem extends Component {
+ 
   render() {
-    let {image,title,discription} = this.props
+    let {image,title,discription,path} = this.props
     return (
       <div>
         <div className="">
@@ -12,7 +15,7 @@ export class NewsItem extends Component {
                 <div className="card-body">
                     <h5 className="card-title">{title} </h5>
                     <p className="card-text">{discription} </p>
-                    <a href= {<FirstNews /> } target={'_blank'} className="btn btn-dark"> Read More</a>
+                    <Link to={path}  rel="noreferrer"> <button className="btn btn-dark" >Read More</button></Link>
                 </div>
             </div>
         </div>
